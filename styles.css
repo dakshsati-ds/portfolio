@@ -204,7 +204,12 @@ body{
   text-align: center;
   font-size: 50px;
   font-family:monospace;
+  transition: 900ms letter-spacing ease-out;
 
+}
+
+.skillsHeading > h1:hover{
+  letter-spacing: 15px;
 }
 
 
@@ -451,7 +456,12 @@ body{
   text-align: center;
   font-size: 50px;
   font-family:monospace;
+  transition: 900ms letter-spacing ease-out;
 
+}
+
+.projectsHeading > h1:hover{
+  letter-spacing: 15px;
 }
 
 
@@ -475,6 +485,7 @@ body{
   cursor: pointer;
 }
 
+
 .projectsCard p{
   font-size:20px;
   letter-spacing: 1px;
@@ -492,6 +503,8 @@ body{
   
   
 }
+
+
 
 /* @keyframes proHeadVibrate{ */
   /* translateX(-20px); */
@@ -520,7 +533,12 @@ body{
   text-align: center;
   font-size: 50px;
   font-family:monospace;
+  transition: 900ms letter-spacing ease-out;
 
+}
+
+.contactHeading > h1:hover{
+  letter-spacing: 15px;
 }
 
 .connect{
