@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Passions+Conflict&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Passions+Conflict&family=Poppins&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Monoton&family=Passions+Conflict&family=Poppins&family=Roboto+Mono&display=swap');
+
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding:0;
+  padding-bottom: 300px;
+  background-color: #FAEBD7;
+  color: #171717;
+  background-image: url("images/background3.png");
+  overflow-x:  hidden;
+
+}
+
+/* NAVBAR*/
+
+
+
+
+.navbarItems{
+
+    padding: 25px 100px;
+    background-color:transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center ;
+    gap: 1rem;
+    z-index: 100;
+    
+}
+
+.navbarItems > *{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black;
+    text-decoration:  none;
+    font-family: Helvetica, sans-serif;    
+}
+
+
+.a1{
+  outline: 3px solid black;
+  border: 3px  solid black;
+  transition: outline-offset 250ms ease;
+  outline-offset: -3px;
+}
+
+.a1:hover, .a1:focus{
+  outline-offset: 3px;
+}
+
+
+.box{
+    background-color:whitesmoke;
+    width: 100%;
+    height: 2px;
+    margin: 30px;
+    
+}
+
+/* heading */
+
+.mainHeading{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.mainHeading > h1{
+
+    margin: 20px auto 0px 150px;
+    text-align: center;
+    letter-spacing: 12px;
+    word-spacing: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family:sans-serif;
+    color: black;
+    transition: 900ms letter-spacing ease-out;
+    cursor: pointer;
+    
+}
+
+.firstName{
+  font-weight: bolder;
+ 
+}
+
+.mainHeading > h1:hover{
+  letter-spacing: 15px;
+
+}
+
+
+.subHeading{
+    margin: -10px auto -10px 150px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Passions Conflict', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    transition: 800ms letter-spacing ease-out;
+    cursor: pointer;
+
+}
+
+.subHeading:hover{
+  letter-spacing: 12px;
+}
+
+
+
+.aboutMe{
+  font-size: 15px;
+  font-weight: bold;
+  
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Passions Conflict', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+
+  display: flex;
+  width: 430px;
+  margin: 10px 0 0 150px;
+  height: auto;
+  padding: 5px;
+  outline: 5px solid  black;
+  border: 5px solid black;
+  outline-offset: -5px;
+  transition:  background, color, outline-offset 500ms ease;
+  cursor: pointer;
+  
+}
+
+.aboutMe:hover{
+  outline-offset: 5px;
+  background: black;
+  color: white;
+  
+  
+}
+
+
+
+.myHelloPhoto > img{
+  position: absolute;
+  
+  top: 135px;
+  left: 850px;
+  width:300px;
+  height: 650px;
+  
+  
+}
+
+.hello{
+  
+ 
+  position: absolute;
+  left: 800px;
+  top: 300px;
+  font-size: 10rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Monoton', cursive;
+  font-family: 'Passions Conflict', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 5px;
+  font-weight: bold;
+
+}
+
+
+.box1{
+  background-color:whitesmoke;
+  width: 100%;
+  height: 2px;
+  margin: 300px auto 50px auto;
+}
+
+
+/* skill cards */
+.skillsHeading > h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  font-family:monospace;
+
+}
+
+
+
+
+.toDoWithCards{
+  margin: 100px;
+  color: black;
+  
+  
+}
+
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  
+}
+
+.card-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+  background: #FAEBD7;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+  background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+
+.card {
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #FAEBD7;
+  box-shadow: -1rem 0 3rem black;
+ 
+  flex-direction: column;
+  transition: .2s transform;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+  cursor:pointer;
+  
+}
+
+
+
+.card:focus-within~.card, .card:hover~.card {
+  transform: translateX(130px);
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+  
+}
+
+.card:nth-child(1):hover{
+  animation: colorChange1 1600ms infinite;
+}
+@keyframes colorChange1 {
+  0% {
+    background-color: #808000;
+  }
+  25% {
+    background-color: #6B8E23;
+  }
+  50% {
+    background-color: #9ACD32;
+  }
+  75% {
+    background-color: #556B2F;
+  }
+  100% {
+    background-color: #006400;
+  }
+}
+
+.card:nth-child(2):hover{
+  animation: colorChange2 1600ms infinite;
+}
+
+@keyframes colorChange2 {
+  0% {
+    background-color: #00FFFF;
+  }
+  25% {
+    background-color: #7FFFD4;
+  }
+  50% {
+    background-color: #40E0D0;
+  }
+  75% {
+    background-color: #AFEEEE;
+  }
+  100% {
+    background-color: #48D1CC;
+  }
+}
+
+
+.card:nth-child(3):hover{
+  animation: colorChange3 1600ms infinite;
+}
+@keyframes colorChange3 {
+  0% {
+    background-color: #CD5C5C;
+  }
+  25% {
+    background-color: #F08080;
+  }
+  50% {
+    background-color: #FA8072;
+  }
+  75% {
+    background-color: #E9967A;
+  }
+  100% {
+    background-color: #DC143C;
+  }
+}
+
+.card:nth-child(4):hover{
+  animation: colorChange4 1600ms infinite;
+}
+@keyframes colorChange4 {
+  0% {
+    background-color: #663399;
+  }
+  25% {
+    background-color: #FF00FF;
+  }
+  50% {
+    background-color: #483D8B;
+  }
+  75% {
+    background-color: #4B0082;
+  }
+  100% {
+    background-color: #9932CC;
+  }
+}
+
+.card:nth-child(5):hover{
+  animation: colorChange5 1600ms infinite;
+}
+@keyframes colorChange5 {
+  0% {
+    background-color: #A0522D;
+  }
+  25% {
+    background-color: #8B4513;
+  }
+  50% {
+    background-color: #F4A460;
+  }
+  75% {
+    background-color: #D2691E;
+  }
+  100% {
+    background-color: #BC8F8F;
+  }
+}
+
+.card:nth-child(6):hover{
+  animation: colorChange6 1600ms infinite;
+}
+@keyframes colorChange6 {
+  0% {
+    background-color: #708090;
+  }
+  25% {
+    background-color: #808080;
+  }
+  50% {
+    background-color: #A9A9A9;
+  }
+  75% {
+    background-color: #696969;
+  }
+  100% {
+    background-color: #778899;
+  }
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+
+
+
+
+
+
+.author-name-prefix {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align:  center;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 30px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Passions Conflict', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+  transition: color, animation;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.author-name-prefix:hover{
+  color: white;
+  
+}
+
+
+
+
+/* PROJECTS */
+
+.box2{
+  background-color:whitesmoke;
+  width: 100%;
+  height: 2px;
+  margin: 200px auto 50px auto;
+}
+
+
+.projectsHeading > h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  font-family:monospace;
+
+}
+
+
+.projectsCard{
+  margin: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Passions Conflict', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.proHead{
+  font-size: 40px;
+  margin: auto auto auto 100px;
+  cursor: pointer;
+}
+
+.projectsCard p{
+  font-size:20px;
+  letter-spacing: 1px;
+  outline: 5px solid  black;
+  border: 5px solid black;
+  outline-offset: -5px;
+  transition:  background, color, outline-offset 500ms ease;
+  cursor: pointer;
+}
+
+.projectsCard p:hover{
+  outline-offset: 5px;
+  background: black;
+  color: white;
+  
+  
+}
+
+/* @keyframes proHeadVibrate{ */
+  /* translateX(-20px); */
+
+
+/* .proHead:hover{ */
+  /* animation: proHeadVibrate 500ms infinite; */
+
+
+
+
+
+/*  contact */
+
+.box3{
+  background-color:whitesmoke;
+  width: 100%;
+  height: 2px;
+  margin: 100px auto 50px auto;
+}
+
+
+.contactHeading > h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  font-family:monospace;
+
+}
+
+.connect{
+  margin: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contactMe{
+  position: relative;
+  left: 50px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Passions Conflict', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.line{
+  position: relative;
+  left: 50px;
+  background-color: black;
+  width: 10rem;
+  height: 0.2rem;
+}
+
+
+
+.socialsHeading{
+  margin-top: 150px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Passions Conflict', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.socials{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+
+}
+
+
+
+.socials > a{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Passions Conflict', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 200ms color ease-out, 200ms background ease-out, outline-offset;
+}
+
+.socials > a:nth-child(1):hover{
+  color:whitesmoke;
+  outline-offset: 1rem solid black;
+  background: black;
+}
+
+.socials > a:nth-child(2):hover{
+  color:whitesmoke;
+  
+  background: deepskyblue;
+}
+
+.socials > a:nth-child(3):hover{
+  color:whitesmoke;
+  
+  background: deeppink;
+}
+
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  ;
+  font-size: 40px;
+}
