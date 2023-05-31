@@ -483,6 +483,11 @@ body{
   font-size: 40px;
   margin: auto auto auto 100px;
   cursor: pointer;
+  transition: 400ms letter-spacing ease-in-out;
+}
+
+.proHead:hover{
+  letter-spacing: 14px;
 }
 
 
